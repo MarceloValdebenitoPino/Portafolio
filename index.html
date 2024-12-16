@@ -2,118 +2,153 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <!-- Enlace a Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <title>Mi Portafolio</title>
 </head>
+
 <body>
-    <header class="bg-dark text-white">
-        <div class="container">
-            <h1 class="text-center">Portafolio</h1>
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="#acerca-de">Acerca de mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Menú -->
+    <header class="cabecera">
+        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+        <h1 class="cabecera__titulo">Mi Portafolio</h1>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container py-4">
-        <section id="acerca-de">
-            <h2>Acerca de mí</h2>
-            <p>Desarrollador Java Trainee, actualmente con 5 años de experiencia desempeñándome como Técnico de Mantenimiento de Red de Incendio en Costanera Center Torre Costanera. Además, fortalecí mi formación con un curso de Análisis de Datos de Google en Coursera. Siempre estoy dispuesto a aprender y mejorar.</p>
-        </section>
-
-        <section id="experiencia">
-            <h2>Experiencia Profesional</h2>
-            <h3>PROTEK SPA | Febrero 2023 – Actualmente</h3>
-            <p>Técnico en Mantención de Red de Incendio, Santiago</p>
-            <ul>
-                <li>Programación central EST3 (eliminación y agregado de dispositivos).</li>
-                <li>Mantenimiento de sensores de incendio con SIGA-HDT.</li>
-                <li>Pruebas semanales de bombas de incendio.</li>
-                <li>Cambios de válvulas de roles 3” y 4”.</li>
-                <li>Mantenimiento de gabinetes, reparando según observaciones.</li>
+    <!-- Sección de Presentación -->
+    <section class="presentacion">
+        <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__titulo">Hola, soy Marcelo y construyo páginas web</h2>
+            <p class="presentacion__subtitulo">Soy desarrollador con experiencia en HTML, CSS, y JavaScript. Estoy participando en el proyecto Oracle ONE en Alura Latam.</p>
+            <ul class="redes">
+                <li class="redes__img"><a href="https://github.com/MarceloValdebenitoPino">GitHub <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.linkedin.com/in/marcelovaldebenito/">LinkedIn <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://drive.google.com/file/d/1bkX0EmV-tu9eaZ80qm69IDii31uylExl/view?usp=sharing">Currículum <img src="assets/arrow.png" alt="Flecha"></a></li>
             </ul>
-
-            <h3>POLEX SERVICIOS SPA | Julio 2019 – Enero 2023</h3>
-            <p>Técnico en Mantención de Red de Incendio, Santiago</p>
-            <ul>
-                <li>Mantenimiento de Red de incendio, Extinción y Detección.</li>
-            </ul>
-
-            <h3>VECTOR SERV. Y ASES. SPA | Marzo 2017 – Abril 2019</h3>
-            <p>Servicio Técnico, Santiago</p>
-            <ul>
-                <li>Servicio Técnico en Tienda Ripley.</li>
-                <li>Revisión de Productos Electrónicos.</li>
-            </ul>
-
-            <h3>LOS ROBLES LTDA | Agosto 2015 – Mayo 2016</h3>
-            <p>Ayudante Técnico, Santiago</p>
-            <ul>
-                <li>Servicio Técnico de Marca Thomas & Siegen.</li>
-                <li>Revisión de Productos Electrónicos.</li>
-            </ul>
-        </section>
-
-        <section id="educacion">
-            <h2>Educación</h2>
-            <ul>
-                <li>Full Stack Java Trainee, Talento Digital</li>
-                <li>Análisis de Datos de Google, Coursera</li>
-                <li>Diseño y Programación Web, Fundación Telefónica</li>
-                <li>Office Básico, Fundación Telefónica</li>
-                <li>Diseño Web con HTML5+CSS, Fundación Telefónica – AIEP</li>
-                <li>Programación con JavaScript, Fundación Telefónica – AIEP</li>
-                <li>Power BI, Escuela de Postgrado y Educación Continua FCFM</li>
-                <li>Product Owner Essentials, Escuela de Postgrado y Educación Continua FCFM</li>
-                <li>Scrum Essentials, Escuela de Postgrado y Educación Continua FCFM</li>
-            </ul>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Java</li>
-                <li>Sprint Boot</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>WordPress</li>
-                <li>Hoja de Cálculo</li>
-                <li>Office</li>
-                <li>Análisis de datos</li>
-            </ul>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Teléfono: +56965590317</p>
-            <p>Correo Electrónico: marcelovaldebenitopino@gmail.com</p>
-            <p>Ubicación: Santiago, Chile</p>
-            <p>Perfil LinkedIn: <a href="https://www.linkedin.com/in/marcelovaldebenito/">Marcelo Valdebenito LinkedIn</a></p>
-            <p>Perfil GitHub: <a href="https://github.com/MarceloValdebenitoPino">Marcelo Valdebenito GitHub</a></p>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <p>Derechos de autor &copy; 2024 Marcelo Valdebenito Pino</p>
         </div>
-    </footer>
+    </section>
 
-    <!-- Enlace a Bootstrap JS (opcional, para funcionalidades adicionales) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mí</h2>
+        <p class="sobre-mi__texto">Desarrollador Java Trainee, poseo conocimientos en Spring Boot, Java, SQL, JavaScript, HTML, CSS, Office y WordPress. 
+            Actualmente, tengo 5 años de experiencia desempeñándome como Técnico de Mantenimiento de Red de Incendio. 
+            Además, fortalecí mi formación con un curso de Análisis de Datos de Google en Coursera. Siempre estoy dispuesto a aprender y mejorar.</p>
+        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/htlm.png" alt="HTML">
+                <p class="habilidades__nombre">HTML 5</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
+                <p class="habilidades__nombre">CSS</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
+                <p class="habilidades__nombre">JavaScript</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Aficiones -->
+    <section class="aficiones" id="aficiones">
+        <h2 class="aficiones__titulo">Aficiones</h2>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/juego.jpg" alt="Patinaje">
+                <p class="aficiones__nombre">Jugar</p>
+                
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="assets/musica.jpg" alt="Música">
+                <p class="aficiones__nombre">Escuchar musica</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Formación académica -->
+<section class="formacion" id="formacion">
+    <h2 class="formacion__titulo">Formación académica</h2>
+    <ul class="formacion__lista">
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Full Stack Java Trainee</h3>
+            <p class="formacion__detalle">Talento Digital</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Análisis de Datos de Google</h3>
+            <p class="formacion__detalle">Coursera</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Diseño y Programación Web</h3>
+            <p class="formacion__detalle">Fundación Telefónica</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Office Básico</h3>
+            <p class="formacion__detalle">Fundación Telefónica</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Diseño Web con HTML5+CSS</h3>
+            <p class="formacion__detalle">Fundación Telefónica – AIEP</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Programación con JavaScript</h3>
+            <p class="formacion__detalle">Fundación Telefónica – AIEP</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Power BI</h3>
+            <p class="formacion__detalle">Escuela de Postgrado y Educación Continua FCFM</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Product Owner Essentials</h3>
+            <p class="formacion__detalle">Escuela de Postgrado y Educación Continua FCFM</p>
+        </li>
+        <li class="formacion__elemento">
+            <h3 class="formacion__nombre">Scrum Essentials</h3>
+            <p class="formacion__detalle">Escuela de Postgrado y Educación Continua FCFM</p>
+        </li>
+    </ul>
+</section>
+
+    <!-- Sección de Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__titulo">Proyectos</h2>
+        <div class="proyectos__contenedor">
+            <h3 class="proyectos__nombre">Proyecto Portafolio</h3>
+            <p class="proyectos__descripcion">Creación de un portafolio moderno y adaptable.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <form class="contacto__formulario">
+            <input class="contacto__campo" type="text" placeholder="Nombre">
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+
 </body>
+<script src="script.js"></script>
 </html>
